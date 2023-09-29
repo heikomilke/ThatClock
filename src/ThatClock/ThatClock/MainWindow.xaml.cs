@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 
 namespace ThatClock
@@ -22,6 +23,7 @@ namespace ThatClock
 
             //RegisterMouseEvasion();
         }
+
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {

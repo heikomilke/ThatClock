@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Publish ThatClock to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+    <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="win-x64" target_folder="$PROJECT_DIR$/../../dist" target_framework="net7.0-windows" uuid_high="-7625677811653980659" uuid_low="-8916090709109756385" />
+    <method v="2" />
+  </configuration>
+</component>
