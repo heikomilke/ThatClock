@@ -11,6 +11,20 @@
       <Compile Update="RegisterMouseEvasion.cs">
         <DependentUpon>MainWindow.xaml</DependentUpon>
       </Compile>
+      <Compile Update="SystrayHandling.cs">
+        <DependentUpon>MainWindow.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="1.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="media\appicon.png" />
+      <Resource Include="media\appicon.png" />
+      <None Remove="media\clock.ico" />
+      <Resource Include="media\clock.ico" />
     </ItemGroup>
 
 </Project>

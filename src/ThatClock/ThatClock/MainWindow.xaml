@@ -13,6 +13,7 @@
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MouseRightButtonDown="Window_MouseRightButtonDown"
         >
     <Grid>
 
