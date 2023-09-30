@@ -4,23 +4,21 @@ using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using Hardcodet.Wpf.TaskbarNotification;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
+
 namespace ThatClock;
 
 partial class MainWindow
 {
-    private TaskbarIcon taskbarIcon;
+    private TaskbarIcon? _taskbarIcon;
 
     private void InitializeNotifyIcon()
     {
-        
         ImageSource imageSource = LoadEmbeddedImage("media/clock.ico");
 
-        
-        
-        taskbarIcon = new TaskbarIcon();
-        taskbarIcon.IconSource = imageSource;
-        taskbarIcon.ToolTipText = "ThatClock";
+
+        _taskbarIcon = new TaskbarIcon();
+        _taskbarIcon.IconSource = imageSource;
+        _taskbarIcon.ToolTipText = "ThatClock";
 
         // Fügen Sie ein Kontextmenü für das Symbol hinzu
         ContextMenu contextMenu = new ContextMenu();
@@ -36,20 +34,13 @@ partial class MainWindow
 
         contextMenu.Items.Add(exitMenuItem);
 
-        taskbarIcon.ContextMenu = contextMenu;
+        _taskbarIcon.ContextMenu = contextMenu;
     }
-    
+
     private ImageSource LoadEmbeddedImage(string imagePath)
     {
-        try
-        {
-            Uri uri = new Uri("pack://application:,,,/" + imagePath);
-            return new BitmapImage(uri);
-        }
-        catch 
-        {
-            return null;
-        }
+        Uri uri = new Uri("pack://application:,,,/" + imagePath);
+        return new BitmapImage(uri);
     }
 
     private void ShowMenuItem_Click(object sender, RoutedEventArgs e)

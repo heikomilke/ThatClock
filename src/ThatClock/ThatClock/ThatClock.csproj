@@ -22,7 +22,6 @@
 
     <ItemGroup>
       <None Remove="media\appicon.png" />
-      <Resource Include="media\appicon.png" />
       <None Remove="media\clock.ico" />
       <Resource Include="media\clock.ico" />
     </ItemGroup>

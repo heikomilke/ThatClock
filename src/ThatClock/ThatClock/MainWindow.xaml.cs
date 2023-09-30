@@ -33,7 +33,7 @@ namespace ThatClock
             DragMove();
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object? sender, EventArgs e)
         {
             UpdateTime();
         }
