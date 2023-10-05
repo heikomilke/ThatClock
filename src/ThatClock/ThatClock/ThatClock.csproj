@@ -9,6 +9,11 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Update="Properties\Settings.Designer.cs">
+        <DesignTimeSharedInput>True</DesignTimeSharedInput>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Settings.settings</DependentUpon>
+      </Compile>
       <Compile Update="RegisterMouseEvasion.cs">
         <DependentUpon>MainWindow.xaml</DependentUpon>
       </Compile>
@@ -25,6 +30,13 @@
       <None Remove="media\appicon.png" />
       <None Remove="media\clock.ico" />
       <Resource Include="media\clock.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Properties\Settings.settings">
+        <Generator>SettingsSingleFileGenerator</Generator>
+        <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      </None>
     </ItemGroup>
 
 </Project>

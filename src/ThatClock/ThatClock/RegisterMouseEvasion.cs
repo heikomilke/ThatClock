@@ -22,7 +22,6 @@ partial class MainWindow
         if (isMouseOver)
         {
             Point mousePosition = e.GetPosition(this);
-
             this.Left = mousePosition.X;
             this.Top = mousePosition.Y;
         }
